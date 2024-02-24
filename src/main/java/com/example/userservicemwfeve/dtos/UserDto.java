@@ -2,10 +2,16 @@ package com.example.userservicemwfeve.dtos;
 
 import com.example.userservicemwfeve.models.Role;
 import com.example.userservicemwfeve.models.User;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.ManyToMany;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
+
+@Setter
+@Getter
 public class UserDto {
     private String  name;
     private String  email;
